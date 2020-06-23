@@ -1,0 +1,76 @@
+/* Master styles */
+body {
+    margin: 0px;
+    background-image: url(../images/giphy.gif);
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px; 
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a; 
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a{
+    color: black;
+}
+.center-side{
+    text-align: center;
+}
+
+a.imageLink{
+    text-decoration:none;
+}
+
+/*Website Styles*/
+.Master-background{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url(../images/giphy.gif);
+}
+
+.porfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.porfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
