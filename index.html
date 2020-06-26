@@ -2,18 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <title>APC | BIG CHUNGUS CO.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
         <meta name="keywords" content="Angel Padilla clothing store, APC">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <audio id="audio2" autoplay loop>
-        <source src="sound/BIGCHUNGUS.mp3" type="audio/mpeg">
-        </audio>
-        <div id="model-modal" class="modelmodal">
-            <h1 id="model-loading" class="modelloading"></h1>
-            <button id="model-close" class="modelclose">x</button> 
-        </div>
+    <iframe src="sound/BIGCHUNGUS.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+    <audio autoplay loop  id="playAudio">
+        <source src="audio/source.mp3">
+    </audio>
 
         <div class="nav-wrapper">
             <div class="left-side">
@@ -46,20 +45,19 @@
         </div>
 
         <div class="contant-wrapper">
-            <!--<img class="Master-background" src="images/giphy.gif"></img>-->
             <div class="porfolio-items-wrapper">
 
                 <div class="porfolio-item-wrapper">
                     <div class="porfolio-img-background" style="background-image:url(images/hangedShirts.jpg)"></div>
 
-                    <div class="img-text-wrap">
+                    <div class="img-text-wrap"> 
 
                         <div class="subtitlle">
                             Store shirts.
                         </div>
 
                         <div class="logo-wrapper">
-                            <img src="images/logo/apc.png" width="250">
+                            <img src="images/logo/apc.png" class="border" width="250">
                             <!--<img src="images/animation/shirtAni2.gif">-->
                         </div>
 
@@ -97,7 +95,9 @@
                         </div>
                     </div>
 
-                </div>   
+                </div> 
+            </div> 
+        </div>          
 <script src="main.js"> </script>           
 </body>
 </html>
