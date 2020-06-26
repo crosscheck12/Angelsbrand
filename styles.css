@@ -1,14 +1,17 @@
 /* Master styles */
 body {
     margin: 0px;
-    background-image: url(../images/giphy.gif);
-
+    background-repeat: no-repeat;
+    background-image: url("images/eye-hand.gif"); 
+    background-size: 100%, 100%;
+    background-position: center;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
 }
+
 /* nav styles */
 .nav-wrapper {
     display: flex;
@@ -29,7 +32,7 @@ body {
 .nav-link-wrapper {
     height: 22px;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    transition: "border-bottom" 0.5s;
 }
 
 .nav-link-wrapper a {
@@ -39,11 +42,12 @@ body {
 }
 
 .nav-link-wrapper:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .nav-link-wrapper a{
-    color: black;
+    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
 }
 .center-side{
     text-align: center;
@@ -53,17 +57,19 @@ a.imageLink{
     text-decoration:none;
 }
 
-/*Website Styles*/
-.Master-background{
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-image: url(../images/giphy.gif);
+.brand{
+    color: white;
+    font-size: 2em;
+    font-family: 'Permanent Marker', cursive;
 }
-
+/*Website Styles*/
 .porfolio-items-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.porfolio-item-wrapper{
+    position: relative;
 }
 
 .porfolio-img-background{
@@ -72,5 +78,16 @@ a.imageLink{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
 
+.logo-wrapper{
+    padding: 1px ;
+    border: 2px solid whitesmoke;
+    position: absolute;
+    background-repeat: repeat;
+    width: 50px;
+}
+
+/*img{
+    filter: opacity(0%)
 }
